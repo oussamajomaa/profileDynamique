@@ -1,0 +1,120 @@
+body{
+    background: black;
+}
+section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h1 {
+    width: 90%;
+    margin: auto;
+    height: 5vw;
+    border-radius: 1%;
+    text-align: center;
+    line-height: 5vw;
+    box-shadow: 5px 2px 9px 1px rgb(255, 255, 255);
+    background: black;
+    color: white;
+}
+
+button{
+    width: 30%;
+    height: 3em;
+    font-size: 2vw;
+    border-radius: 2%;
+    box-shadow: 5px 2px 5px 0 rgb(255, 255, 255);
+    background: black;
+    color: white;
+    font-weight: bolder;
+}
+button:hover{
+    background: white;
+    color:black;
+    box-shadow: 5px 2px 5px 0 rgb(136, 136, 136);
+}
+button:focus{
+    background: white;
+    color:black;
+    box-shadow: 5px 2px 5px 0 rgb(136, 136, 136);
+}
+
+table {
+    border-spacing: 4px;
+    width: 90%;
+    margin: auto;
+}
+
+td {
+    border: 1px solid black;
+    font-size: 1.75vw;
+    padding: 5px;
+    width: 45%;
+    text-align: center;
+    border-radius: 3%;
+}
+
+tr:nth-child(odd) {
+    background: silver;
+}
+tr:nth-child(even) {
+    background: grey;
+}
+
+
+
+th,.tdHumaine{
+    font-size: 2vw;
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    width: 90%;
+}
+
+.tr td,.tdHumaine{
+    font-weight: bolder;
+}
+
+.front{
+    background: black;
+}
+
+div{
+    width: 1%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.progress{
+    font-size: 12px;
+    color: white;
+}
+
+@media only screen and (max-width:768px){
+
+    th,h1{
+        font-size: 4vw;
+        margin-top: .5em;
+    }
+    td{
+        font-size: 3vw;
+    }
+    section{
+        flex-flow: column;
+    }
+    button{
+        margin-top: 1em;
+        margin-bottom: .5em;
+        width: 60%;
+        font-size: 3vw;
+    }
+}
+
+
