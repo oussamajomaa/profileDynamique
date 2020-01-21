@@ -58,6 +58,7 @@ td {
     width: 45%;
     text-align: center;
     border-radius: 3%;
+    box-shadow: 3px 2px 3px 0 rgb(136, 136, 136);
 }
 
 tr:nth-child(odd) {
@@ -90,6 +91,7 @@ div{
     width: 1%;
     height: auto;
     background-color: rgb(0, 0, 0);
+    box-shadow: 5px -3px 5px 0 rgb(97, 79, 79);
 }
 
 .progress{

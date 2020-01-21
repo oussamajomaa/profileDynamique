@@ -1,6 +1,8 @@
 
 let int = "";
 let i = 1;
+
+// define a class named Profile
 class Profile {
     constructor(acquisition, mention, categorie, intitule, front) {
         this.intitule = intitule;
@@ -11,9 +13,10 @@ class Profile {
         this.afficher();
     }
     afficher() {
-
+        // this condition will check the title of skil to avoid to repeat it 6times
         if (int != this.intitule) {
             if (this.categorie == 'technique') {
+                // with split method I clear the '_' and replace it by " " with join method
                 let th = this.addElement('th', this.intitule.split("_").join(" "), table);
                 th.setAttribute('colspan', '2')
                 let tr = this.addElement('tr', "", table)
@@ -52,9 +55,11 @@ class Profile {
         i++;
     }
 
+    // method to do animation on progress bar 
     progressBar(e, p) {
         let elem = document.getElementById(e);
         let w = 1;
+        // setInterval function will call 'frame' function many times untill div's width equal evaluation skil
         let id = setInterval(frame, 20);
         function frame() {
             if (w >= p) {
@@ -66,7 +71,7 @@ class Profile {
             }
         }
     }
-
+    // this method is to add element to the DOM
     addElement(element, texte, target) {
         let el = document.createElement(element);
         el.textContent = texte;

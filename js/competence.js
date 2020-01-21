@@ -1,10 +1,11 @@
 
-
+// on click on the button it will empty the table and show it
 $('#btn1').click(() => {
     $('table').empty();
     $('table').show();
 
-    fetch('http://localhost:1337/fiches').then(data => {
+    // we get data from strapi by fetch
+    fetch('http://localhost:1337/metiers').then(data => {
         data.json()
             .then(data => {
                 for (const iterator of data) {
@@ -43,5 +44,6 @@ $('#btn3').click(() => {
             })
     })
 })
+
 
 
